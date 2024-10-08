@@ -131,18 +131,19 @@ td#name {
   border: none;
   margin-top: -4px !important;
   margin-bottom: 8px !important;
+  border-radius: 8px !important; /* Rounded corners */
 }
-/* switches page status*/
+
+/* switches page status */
 body table#itemtablenostatus tr td:first-child + td,
 td#bigtext {
   color: #FFBB3F !important;
-  /*margin: -25px 4px 0px 0px;
-  font-weight: 600 !important;
-  font-size: 130% !important;*/
   margin: -23px 6px 0px 0px !important;
   font-size: 16px !important;
   text-transform: uppercase !important;
+  border-radius: 8px !important; /* Rounded corners */
 }
+
 body table#itemtablenotype tbody tr,
 body table#itemtable tbody tr,
 body table#itemtablesmalldoubleicon tbody tr,
@@ -150,30 +151,9 @@ body table#itemtablesmalltrippleicon tbody tr {
   color: #eee;
   background-color: #353535;
   overflow: hidden;
+  border-radius: 8px !important; /* Rounded corners */
 }
-body table#itemtablenostatus tbody tr:hover,
-body table#itemtablenotype tbody tr:hover,
-body table#itemtable tbody tr:hover,
-body table#itemtablesmall tbody tr:hover,
-body table#itemtablesmalldoubleicon tbody tr:hover,
-body table#itemtablesmalltrippleicon tbody tr:hover,
-body table#itemtabledoubleicon tbody tr:hover,
-body table#itemtabletrippleicon tbody tr:hover {
-  border-color: inherit;
-  background-color: #3a3a3a;
-}
-/*background of switches transparent*/
-body table#itemtablenostatus tbody tr,
-body table#itemtablenotype tbody tr,
-body table#itemtable tbody tr,
-body table#itemtablesmall tbody tr,
-body table#itemtablesmalldoubleicon tbody tr,
-body table#itemtablesmalltrippleicon tbody tr,
-body table#itemtabledoubleicon tbody tr,
-body table#itemtabletrippleicon tbody tr {
-  background: rgba(51, 51, 51, 0.7) !important;
-  overflow: hidden !important;
-}
+
 body table#itemtablenostatus tbody tr:hover,
 body table#itemtablenotype tbody tr:hover,
 body table#itemtable tbody tr:hover,
@@ -185,7 +165,37 @@ body table#itemtabletrippleicon tbody tr:hover {
   border-color: inherit;
   background-color: #3a3a3a;
   background: rgba(53, 53, 53, 0.5) !important;
+  border-radius: 8px !important; /* Rounded corners on hover */
 }
+
+/* background of switches transparent */
+body table#itemtablenostatus tbody tr,
+body table#itemtablenotype tbody tr,
+body table#itemtable tbody tr,
+body table#itemtablesmall tbody tr,
+body table#itemtablesmalldoubleicon tbody tr,
+body table#itemtablesmalltrippleicon tbody tr,
+body table#itemtabledoubleicon tbody tr,
+body table#itemtabletrippleicon tbody tr {
+  background: rgba(51, 51, 51, 0.7) !important;
+  overflow: hidden !important;
+  border-radius: 8px !important; /* Rounded corners */
+}
+
+body table#itemtablenostatus tbody tr:hover,
+body table#itemtablenotype tbody tr:hover,
+body table#itemtable tbody tr:hover,
+body table#itemtablesmall tbody tr:hover,
+body table#itemtablesmalldoubleicon tbody tr:hover,
+body table#itemtablesmalltrippleicon tbody tr:hover,
+body table#itemtabledoubleicon tbody tr:hover,
+body table#itemtabletrippleicon tbody tr:hover {
+  border-color: inherit;
+  background-color: #3a3a3a;
+  background: rgba(53, 53, 53, 0.5) !important;
+  border-radius: 8px !important; /* Rounded corners on hover */
+}
+
 /*background of switches transparent end*/
 #copyright {
   border: 0;
