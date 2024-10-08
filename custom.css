@@ -43,7 +43,9 @@ html * {
 li {
   line-height: normal;
 }
-
+.navbar .divider-vertical {
+  margin: 0 4px;
+}
 .navbar-inverse .navbar-inner {
   padding: 5px;
   background-color: #18181A;
@@ -78,12 +80,15 @@ li {
   border: none;
   border-radius: 8px !important;
 }
+.navbar .nav li a {
+  margin:8px;
+}
 
 /* Dropdown menu styling */
 .navbar .nav .dropdown-menu {
-  padding: 1px;
-  background-color: #777;
-  border-radius: 8px !important;
+  padding: 0px;
+  border: 0px solid #616261;
+  background-color: transparent;
 }
 
 /* Hover effect for navbar links */
@@ -500,6 +505,7 @@ div.log {
   color: #FA1515;
 }
 .dropdown-menu .divider {
+	display:none;
   height: 0px;
   margin: 0px 0px;
   overflow: hidden;
