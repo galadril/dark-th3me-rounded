@@ -16,7 +16,7 @@
 html * {
   font-family: Ubuntu;
   font-weight: normal;
-  border-radius: 0 !important;
+  border-radius: 8px !important;
 }
 
 .brand h1 {
@@ -42,6 +42,14 @@ html * {
 }
 li {
   line-height: normal;
+}
+
+.navbar-inverse .navbar-inner {
+  padding: 5px;
+  background-color: #18181A;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
 }
 
 /* Current page item hover with gradient */
@@ -144,7 +152,7 @@ body table#itemtablesmalltrippleicon  tr td:first-child {
 body table#itemtablesmall tr td:first-child + td,
 body table#itemtablesmalldoubleicon tr td:first-child + td,
 body table#itemtablesmalltrippleicon tr td:first-child + td {
-  color: #232327;
+  color: #eee;
   margin: -24px 4px 0px 0px;
   font-weight: normal;
   font-size: 110% !important;
@@ -166,7 +174,7 @@ h2 {
   font-size: 1em;
 }
 body table#itemtablenostatus tbody tr {
-  color: #232327;
+  color: #eee;
   background-color: #353535;
   overflow: hidden;
 }
@@ -196,7 +204,7 @@ body table#itemtablenotype tbody tr,
 body table#itemtable tbody tr,
 body table#itemtablesmalldoubleicon tbody tr,
 body table#itemtablesmalltrippleicon tbody tr {
-  color: #232327;
+  color: #eee;
   background-color: #353535;
   overflow: hidden;
   border-radius: 8px !important; /* Rounded corners */
@@ -406,7 +414,7 @@ body table#itemtabledoubleicon tr td:first-child + td + td + td + td + td + td:b
 body table#itemtablesmall tbody tr,
 body table#itemtabledoubleicon tbody tr,
 body table#itemtabletrippleicon tbody tr {
-  color: #232327;
+  color: #eee;
   background-color: #353535;
   overflow: hidden;
 }
@@ -586,7 +594,7 @@ nav, section {
   color: #fff;
 }
 input {
-  background-color: #232327;
+  background-color: #eee;
 }
 input[type="search"] {
   border-radius: 3px;
