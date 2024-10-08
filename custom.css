@@ -16,7 +16,7 @@
 html * {
   font-family: Ubuntu;
   font-weight: normal;
-  border-radius: 8px !important;
+  border-radius: 0 !important;
 }
 
 .brand h1 {
@@ -68,7 +68,7 @@ li {
 /* Current page item default background */
 .navbar .nav .current_page_item > a {
   background-color: #49d;
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 8px !important;
 }
 
 /* General navbar links */
@@ -76,15 +76,14 @@ li {
   background-color: #454545;
   background-image: none;
   border: none;
-  border-radius: 12px; /* Add rounded corners to all links */
-  padding: 8px 12px; /* Add padding for better spacing */
+  border-radius: 8px !important;
 }
 
 /* Dropdown menu styling */
 .navbar .nav .dropdown-menu {
   padding: 1px;
   background-color: #777;
-  border-radius: 8px; /* Rounded dropdown */
+  border-radius: 8px !important;
 }
 
 /* Hover effect for navbar links */
@@ -96,12 +95,12 @@ li {
   background-image: -ms-linear-gradient(top, #646464, #222);
   background-image: -o-linear-gradient(top, #646464, #222);
   background-image: linear-gradient(to bottom, #646464, #222);
-  border-radius: 12px; /* Ensure hover maintains rounded corners */
+  border-radius: 8px !important;
 }
 
 /* Nav-tabs border radius */
 .nav-tabs > li > a {
-  border-radius: 4px;
+  border-radius: 8px !important;
 }
 
 /* Active tab link with no border */
@@ -109,7 +108,7 @@ li {
 .nav-tabs > .active > a:hover, 
 .nav-tabs > .active > a:focus {
   border: 0;
-  border-radius: 4px; /* Ensure active tab is also rounded */
+  border-radius: 8px !important;
 }
 
 /* Remove border on hover for navbar links */
