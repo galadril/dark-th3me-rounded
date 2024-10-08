@@ -18,11 +18,7 @@ html * {
   font-weight: normal;
   border-radius: 0 !important;
 }
-.navbar-inverse .navbar-inner {
-  background-color: rgba(51, 51, 51, 0.8);
-  height: 50px !important;
-  border-color: transparent;
-}
+
 .brand h1 {
   margin-left: 40px;
   margin-top: -45px;
@@ -30,7 +26,6 @@ html * {
   font-weight: 500 !important;
   color: #FFF;
   text-transform: uppercase;
-
 }
 .brand h2 {
   float: left;
@@ -48,23 +43,77 @@ html * {
 li {
   line-height: normal;
 }
+
+/* Current page item hover with gradient */
 .navbar .nav .current_page_item > a:hover {
   background-color: #48b;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#48b), color-stop(100%, #25a));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #48b), color-stop(100%, #25a));
   background-image: -webkit-linear-gradient(top, #48b, #25a);
   background-image: -moz-linear-gradient(top, #48b, #25a);
   background-image: -ms-linear-gradient(top, #48b, #25a);
   background-image: -o-linear-gradient(top, #48b, #25a);
-  background-image: linear-gradient(top, #48b, #25a);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#48b, endColorstr=#25a);
+  background-image: linear-gradient(to bottom, #48b, #25a); /* Corrected gradient direction */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#48b, endColorstr=#25a);
+  border-radius: 12px; /* Add rounding to current page item */
 }
+
+/* Current page item default background */
 .navbar .nav .current_page_item > a {
   background-color: #49d;
+  border-radius: 12px; /* Rounded corners */
 }
+
+/* General navbar links */
 .navbar .nav li a {
   background-color: #454545;
   background-image: none;
   border: none;
+  border-radius: 12px; /* Add rounded corners to all links */
+  padding: 8px 12px; /* Add padding for better spacing */
+}
+
+/* Dropdown menu styling */
+.navbar .nav .dropdown-menu {
+  padding: 1px;
+  background-color: #777;
+  border-radius: 8px; /* Rounded dropdown */
+}
+
+/* Hover effect for navbar links */
+.navbar .nav li a:hover {
+  background-color: #454545;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #646464), color-stop(100%, #222));
+  background-image: -webkit-linear-gradient(top, #646464, #222);
+  background-image: -moz-linear-gradient(top, #646464, #222);
+  background-image: -ms-linear-gradient(top, #646464, #222);
+  background-image: -o-linear-gradient(top, #646464, #222);
+  background-image: linear-gradient(to bottom, #646464, #222);
+  border-radius: 12px; /* Ensure hover maintains rounded corners */
+}
+
+/* Nav-tabs border radius */
+.nav-tabs > li > a {
+  border-radius: 4px;
+}
+
+/* Active tab link with no border */
+.nav-tabs > .active > a, 
+.nav-tabs > .active > a:hover, 
+.nav-tabs > .active > a:focus {
+  border: 0;
+  border-radius: 4px; /* Ensure active tab is also rounded */
+}
+
+/* Remove border on hover for navbar links */
+.navbar .nav li a:hover {
+  border: 0;
+}
+
+/* General hover and focus for navbar links */
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  color: #111;
+  border-radius: 12px; /* Add rounding to hovered/focused links */
 }
 
 #holder > .container-fluid {
@@ -216,20 +265,7 @@ body table#itemtabletrippleicon tbody tr:hover {
 div#utilitycontent {
   margin-bottom: 15px;
 }
-.navbar .nav .dropdown-menu {
-  padding: 1px;
-  background-color: #777;
-  background-image: initial;
-}
-.navbar .nav li a:hover {
-  background-color: #454545;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#646464), color-stop(100%, #222));
-  background-image: -webkit-linear-gradient(top, #646464, #222);
-  background-image: -moz-linear-gradient(top, #646464, #222);
-  background-image: -ms-linear-gradient(top, #646464, #222);
-  background-image: -o-linear-gradient(top, #646464, #222);
-  background-image: linear-gradient(top, #646464, #222);
-}
+
 .dropdown-menu > li > a {
   line-height: 20px;
 }
@@ -313,22 +349,9 @@ td#type{ /* type of switch row*/
   font-size: 9px !important;
   margin: 0px 0px 0px 0px !important;
 }
-.nav-tabs > li > a {
-  -webkit-border-radius: 4px 4px 4px 4px;
-  -moz-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-}
-.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
-  border: 0;
-}
-.navbar .nav li a:hover {
-  border: 0;
-}
+
 .page-header-small {
   border-bottom: 1px solid #888;
-}
-.nav > li > a:hover, .nav > li > a:focus {
-  color: #111;
 }
 body table#itemtablesmall tr td:first-child + td + td + td,
 body table#itemtablesmalldoubleicon tr td:first-child + td + td + td + td,
