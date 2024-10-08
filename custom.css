@@ -78,7 +78,6 @@ body {
 /*only show special background when screen is min 1000px width, so tablets show normal background*/
 @media (min-width: 1025px) {
   body {
-    background: #7d7e7d url(images/domoticz.jpg) center fixed;
     color: #ffffff;
   }
 }
