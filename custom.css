@@ -80,7 +80,8 @@ li {
   border: none;
   border-radius: 8px !important;
 }
-.navbar .nav li a {
+
+.navbar .nav li{
   margin:8px;
 }
 
